@@ -167,6 +167,11 @@ body{
     padding: 25px;
 }
 
+.active{
+    display: flex;
+}
+
+
 .info-share::after{
     content: "";
     position: absolute;
@@ -203,6 +208,8 @@ footer {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* MEDIA QUERY */
 
 @media (max-width: 600px) {
     .container{
@@ -256,16 +263,22 @@ footer {
     }
 
     .info-share{
-        align-items: center;
-        top: 230px;
+        align-items: start;
+        top: 220px;
         width: 100%;
-        height: 70px;
+        height: 80px;
         left: 0;
         border-radius: 0px 0px 10px 10px;
+        padding-top: 20px;
     }
 
     .share{
         margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .redes{
+        width: 19px;
     }
 
     .icons-redes{
@@ -286,7 +299,7 @@ footer {
         padding: 5px;
         border-radius: 50%;
         background-color: var(--Grayish-Blue);
-        margin-left: 50px;
+        margin-left: 30px;
     }
 
     .icon-share2 path{
